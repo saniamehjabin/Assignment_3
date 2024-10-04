@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applicant Information"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp" />
+
+
+  <LinearLayout
+      android:id="@+id/inputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bg"
+      android:padding="10dp"
+      android:orientation="vertical">
+
+      <EditText
+          android:id="@+id/name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:padding="10dp"
+          android:hint="Name"
+          android:inputType="textPersonName" />
+
+      <EditText
+          android:id="@+id/email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:padding="10dp"
+          android:hint="Email"
+          android:inputType="textEmailAddress" />
+
+      <EditText
+          android:id="@+id/phone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:padding="10dp"
+          android:hint="Phone Number"
+          android:inputType="phone" />
+
+      <EditText
+          android:id="@+id/address"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:padding="10dp"
+          android:hint="Address"
+          android:inputType="textMultiLine"
+          android:lines="2"
+          android:gravity="top" />
+
+      <EditText
+          android:id="@+id/linkedinProfile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:padding="10dp"
+          android:hint="LinkedIn Profile (URL)"
+          android:inputType="textUri" />
+
+      <EditText
+          android:id="@+id/skills"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border"
+          android:padding="10dp"
+          android:hint="Skills"
+          android:inputType="textMultiLine"
+          android:lines="3"
+          android:gravity="top" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Highest Qualification"
+          android:layout_marginBottom="10dp"
+          android:layout_marginTop="15dp" />
+
+      <Spinner
+          android:id="@+id/spinner1"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:spinnerMode="dropdown"
+
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Years of Experience"
+          android:layout_marginBottom="10dp"
+          android:layout_marginTop="15dp" />
+
+      <Spinner
+          android:id="@+id/spinner2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:spinnerMode="dropdown"/>
+
+
+      <Button
+          android:id="@+id/button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Submit"
+          android:layout_gravity="center"
+          android:layout_marginTop="24dp" />
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/outputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+             />
+    </LinearLayout>
+
+</LinearLayout>
